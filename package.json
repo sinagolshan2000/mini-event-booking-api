@@ -1,0 +1,43 @@
+{
+  "name": "mini-event-booking-api",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinagolshan2000/mini-event-booking-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinagolshan2000/mini-event-booking-api/issues"
+  },
+  "homepage": "https://github.com/sinagolshan2000/mini-event-booking-api#readme",
+  "dependencies": {
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@sinclair/typebox": "^0.34.41",
+    "bcrypt": "^6.0.0",
+    "fastify": "^5.6.2",
+    "fastify-plugin": "^5.1.0",
+    "lowdb": "^7.0.1",
+    "nanoid": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/node": "^25.0.3",
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "users": [
+
+  ],
+  "events": [
+    {
+      "id": "u0wH8PTsv09z_ImSqW1KS",
+      "name": "Updated Conference",
+      "date": "2025-12-31T10:00:00Z",
+      "location": "Singapore",
+      "capacity": 10
+    }
+  ],
+  "bookings": [
+    {
+      "id": "mDqc1Ug1K6FHkrcA7Os9i",
+      "userId": "user-1",
+      "eventId": "u0wH8PTsv09z_ImSqW1KS",
+      "createdAt": "2025-12-19T03:56:56.806Z"
+    }
+  ]
+}

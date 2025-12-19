@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "email": "user@example.com",
+      "password": "$2b$10$lhnSiERn30CWiLGi/wcZleZxjfmkl2YlIpqXXqEaJkToJrWSmJK1i",
+      "token": "08dc3f3bb44ba28822dfd0d111fa7e00769ad7f6d825ce5fdd591fa90f74bb83"
+    },
+    {
+      "id": "user-2",
+      "email": "user2@example.com",
+      "password": "$2b$10$lhnSiERn30CWiLGi/wcZleZxjfmkl2YlIpqXXqEaJkToJrWSmJK1i",
+      "token": "73f53f6d7f2b9d84fffa66c21b5efc848aa4cd616d8ba54772807e2906f8e3ea"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "name": "Test Event",
+      "date": "2025-12-15T00:00:00Z",
+      "location": "Test Hall",
+      "capacity": 1
+    },
+    {
+      "id": "event-2",
+      "name": "Second Event",
+      "date": "2025-12-20T00:00:00Z",
+      "location": "Main Hall",
+      "capacity": 5
+    }
+  ],
+  "bookings": []
+}
