@@ -27,9 +27,6 @@ describe('Events', () => {
       .get('/events')
       .set('Authorization', `Bearer ${token_user_1}`);
 
-    console.log('STATUS:', res.status);
-    console.log('BODY:', res.body);
-
     expect(res.status).toBe(200);
     expect(res.body.data).toBeInstanceOf(Array);
     expect(res.body.data[0].remainingSeats).toBeDefined();

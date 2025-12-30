@@ -24,16 +24,28 @@ export async function initDB() {
         const bcrypt = require('bcrypt');
         const hash = await bcrypt.hash('password123', 10);
         db.data.users.push({
+            id: 'user-0',
+            email: 'admin@example.com',
+            password: hash,
+            token: '',
+            is_admin: true,
+            description: 'Admin user'
+        });
+        db.data.users.push({
             id: 'user-1',
             email: 'user@example.com',
             password: hash,
-            token: ''
+            token: '',
+            is_admin: false,
+            description: 'some user description'
         });
         db.data.users.push({
             id: 'user-2',
             email: 'user2@example.com',
             password: hash,
-            token: ''
+            token: '',
+            is_admin: false,
+            description: 'some user description'
         });
     }
 

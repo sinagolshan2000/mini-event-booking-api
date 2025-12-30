@@ -20,6 +20,8 @@ export interface User {
   email: string;
   password: string;  // hashed password
   token: string;     // current active token
+  is_admin: boolean;
+  description: string;
 }
 
 

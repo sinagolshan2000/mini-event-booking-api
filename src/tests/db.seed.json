@@ -1,16 +1,28 @@
 {
   "users": [
     {
+      "id": "user-0",
+      "email": "admin@example.com",
+      "password": "$2b$10$lhnSiERn30CWiLGi/wcZleZxjfmkl2YlIpqXXqEaJkToJrWSmJK1i",
+      "token": "0Xzzzf3bb44ba28822dfd0d111fa7e00769ad7f6d825ce5fdd591fa90f74bb83",
+      "is_admin": true,
+      "description": "Admin user"
+    },
+    {
       "id": "user-1",
       "email": "user@example.com",
       "password": "$2b$10$lhnSiERn30CWiLGi/wcZleZxjfmkl2YlIpqXXqEaJkToJrWSmJK1i",
-      "token": "08dc3f3bb44ba28822dfd0d111fa7e00769ad7f6d825ce5fdd591fa90f74bb83"
+      "token": "08dc3f3bb44ba28822dfd0d111fa7e00769ad7f6d825ce5fdd591fa90f74bb83",
+      "is_admin": false,
+      "description": "some user description"
     },
     {
       "id": "user-2",
       "email": "user2@example.com",
       "password": "$2b$10$lhnSiERn30CWiLGi/wcZleZxjfmkl2YlIpqXXqEaJkToJrWSmJK1i",
-      "token": "73f53f6d7f2b9d84fffa66c21b5efc848aa4cd616d8ba54772807e2906f8e3ea"
+      "token": "73f53f6d7f2b9d84fffa66c21b5efc848aa4cd616d8ba54772807e2906f8e3ea",
+      "is_admin": false,
+      "description": "some user description"
     }
   ],
   "events": [

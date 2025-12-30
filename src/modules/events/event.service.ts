@@ -1,6 +1,7 @@
 import { db } from '../../db/lowdb';
 import { Event } from '../../db/schema';
 import { nanoid } from 'nanoid';
+import { Paginator } from '../../utilities/paginators';
 
 
 export class EventService {
@@ -32,12 +33,15 @@ export class EventService {
         const startIdx = (page - 1) * limit;
         const endIdx = startIdx + limit;
 
-        const list = events.slice(startIdx, endIdx).map(e => {
+        const paginator = new Paginator(events, page, limit);
+        const paginated = paginator.toJSON();
+
+        paginated.data = paginated.data.map(e => {
             const booked = db.data!.bookings.filter(b => b.eventId === e.id).length;
             return { ...e, remainingSeats: e.capacity - booked };
         });
 
-        return { total: events.length, page, limit, data: list };
+        return paginated;
     }
 
 

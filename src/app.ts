@@ -4,6 +4,7 @@ import rateLimit from '@fastify/rate-limit';
 import { authPlugin } from './modules/auth/auth.plugin';
 import { eventRoutes } from './modules/events/event.routes';
 import { bookingRoutes } from './modules/bookings/booking.routes';
+import { userRoutes } from './modules/users/user.routes';
 
 export function buildApp() {
     // Create Fastify app    
@@ -20,6 +21,7 @@ export function buildApp() {
     app.register(authPlugin);
 
     // Domain routes
+    app.register(userRoutes);
     app.register(eventRoutes);
     app.register(bookingRoutes);
 

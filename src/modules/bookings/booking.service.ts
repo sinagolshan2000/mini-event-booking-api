@@ -1,5 +1,6 @@
 import { db } from '../../db/lowdb';
 import { nanoid } from 'nanoid';
+import { Paginator } from '../../utilities/paginators';
 
 
 export class BookingService {
@@ -28,10 +29,9 @@ export class BookingService {
 
     static async list({ page = 1, limit = 10 }) {
         await db.read();
-        const start = (page - 1) * limit;
-        const end = start + limit;
-        const data = db.data!.bookings.slice(start, end);
-        return { total: db.data!.bookings.length, page, limit, data };
+        const bookings = db.data!.bookings;
+        const paginator = new Paginator(bookings, page, limit);
+        return paginator.toJSON();
     }
 
 

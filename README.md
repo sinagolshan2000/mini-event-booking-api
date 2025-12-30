@@ -22,7 +22,7 @@ You see them in postman.json and you can import them in postman
 
 ### Core
 
-* CRUD APIs for **Events** and **Bookings**
+* CRUD APIs for **Events** and **Bookings** and **Users**
 * Each Event has: `name`, `date`, `location`, `capacity`
 * Each Booking links a **user** to an **event**
 * List events with **remaining seats**
